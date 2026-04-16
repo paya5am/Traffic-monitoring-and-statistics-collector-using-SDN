@@ -1,5 +1,5 @@
 # SDN Traffic Monitoring and Statistics Collector
-**Author:** Aadhavan ( paya5am ) <br>PES1UG24CS002
+**AADHAVAN MUTHUSAMY( paya5am )** <br>**PES1UG24CS002**
 
 ## 1. Problem Statement & Objective
 The objective of this project is to implement a Software-Defined Networking (SDN) solution that actively collects and displays traffic statistics. The controller acts as a Layer 2 learning switch while utilizing a background thread to periodically query the switch for flow-level and port-level metrics (packet counts, byte counts), enabling real-time network observation.
@@ -80,7 +80,7 @@ To prove the explicit match-action rules (and the manual drop rule) reside in th
 To validate the SDN communication protocol, Wireshark was used to capture traffic on the loopback interface (`127.0.0.1`).
 * **Action:** Filtered Wireshark traffic for `openflow_v4`.
 * **Result:** The capture clearly displays the `OFPT_PACKET_IN` / `OFPT_PACKET_OUT` learning behavior, `OFPT_FLOW_MOD` rule insertions, and the periodic `OFPMP_PORT_STATS` / `OFPMP_FLOW`, `OFPT_MULTIPART_REQUEST` / `OFPT_MULTIPART_REQUEST ` multipart requests and replies driving the statistics collector.
-![Wireshark Capture](imgs/wireshark.jpg)
+![Wireshark Capture](imgs/wireshark.png)
 
 ---
 
